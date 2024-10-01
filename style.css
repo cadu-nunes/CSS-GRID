@@ -9,7 +9,7 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #393434; /* Cor de fundo do site */
-    color: #fff; /* Cor do texto */
+    color: #000000; /* Cor do texto */
     line-height: 1.6; /* Espaçamento entre linhas de texto */
     width: 100%;
     height: 100%;
@@ -29,7 +29,7 @@ header {
 .logo {
     width: 45px;
     height: 45px;
-    background-color: #ccc;
+    background-color: #ffffff;
     border-radius: 10px; /* Bordas arredondadas para o logo */
 }
 
@@ -47,7 +47,8 @@ header {
 }
 
 .menu li a:hover {
-    background-color: #6a6969; /* Cor de fundo ao passar o mouse */
+    background-color: #ffffff; /* Cor de fundo ao passar o mouse */
+    color: black;
 }
 
 .container {
@@ -67,8 +68,8 @@ header {
 
 .sidenav {
     grid-area: sidenav; /* Define a área do grid que a barra lateral ocupará */
-    background-color: #1E3A8A; /* Fundo azul escuro */
-    color: #F0F4FF; /* Cor do texto em azul claro */
+    background-color: #ffffff; /* Fundo azul escuro */
+    color: #000000; /* Cor do texto em azul claro */
     border-radius: 20px; /* Bordas arredondadas */
     padding: 20px;
 }
@@ -89,7 +90,7 @@ header {
 
 .footer {
     grid-area: footer;
-    background-color: #6a6969;
+    background-color: #ffffff;
     border-radius: 20px;
     text-align: center;
     padding: 30px; /* Aumenta o tamanho do rodapé */
@@ -113,4 +114,21 @@ header {
     width: 30px;
     height: 30px;
     border-radius: 50%; /* Ícones arredondados */
+}
+
+.social-icons img {
+    width: 40px; /* Define o tamanho inicial */
+    transition: transform 0.5s ease; /* Suaviza a transição */
+}
+
+.social-icons img:hover {
+    transform: scale(2); /* Aumenta a imagem em 20% */
+}
+
+img {
+    object-fit: contain;
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 20px;
+    top: 0px;
 }
